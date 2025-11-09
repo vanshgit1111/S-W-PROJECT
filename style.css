@@ -1,0 +1,465 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #111;    
+  color: #e3e3e3;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 40px;
+  border-bottom: 1px solid #333;
+  position: sticky;
+  top:0px;
+  opacity: 1;
+  background: linear-gradient( #333, #191818);
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.nav-links a {
+    margin: 0 15px;
+    color: #cccccc;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: #ffffff;
+}
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+}
+
+
+.hero-section {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.hero-section h1 {
+  font-size: 60px;
+  font-weight: 900;
+  z-index: 2;
+  margin-bottom: 15px;
+  letter-spacing: 2px;
+}
+
+.hero-section p {
+  font-size: 18px;
+  z-index: 2;
+  margin-bottom: 30px;
+  color: #f2f2f2;
+}
+
+.hero-buttons {
+  z-index: 2;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  opacity: 0.8;
+}
+
+.hero-buttons button {
+  color: #000000;
+  border: none;
+  border-radius: 25px;
+  padding: 12px 22px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.hero-buttons button:hover {
+  background-color: #ffffff;
+  opacity: 1;
+}
+
+.adventure-section {
+  background-color: #3b3d4a;
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.adventure-section h2 {
+  font-size: 32px;
+  font-weight: 900;
+  margin-bottom: 40px;
+  letter-spacing: 1px;
+}
+
+.adventure-slider {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding-bottom: 10px;
+}
+
+.adventure-card {
+  background-color: #2c2e38;
+  border-radius: 6px;
+  overflow: hidden;
+  width: 250px;
+  min-width: 250px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.adventure-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.adventure-card p {
+  padding: 12px;
+  font-size: 14px;
+  color: #fff;
+  text-align: left;
+}
+
+.adventure-card:hover {
+  box-shadow: 0 6px 15px rgba(255,255,255,0.2);
+}
+
+.detailsaboutlandmark {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: space-between;
+  background-color: #292a33;
+  color: #ffffff;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  overflow: hidden;
+}
+
+.detail1{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 60px 40px;
+}
+
+.detail2 {
+  font-size: 18px;
+  letter-spacing: 2px;
+  color: #b0b0b0;
+  margin-bottom: 10px;
+}
+
+.detail3 {
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+
+.detail4 {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #d8d8d8;
+  max-width: 500px;
+  margin-bottom: 30px;
+}
+
+.detailbtn{
+  display: inline-block;
+  background-color: #d5a48d;
+  color: #2f303a;
+  font-weight: 700;
+  padding: 12px 24px;
+  border-radius: 30px;
+  width: 90px;
+  text-decoration: none;
+  margin-top:5%;
+}
+
+.detailbtn:hover {
+  background-color: #ffffff;
+}
+
+.detailcount {
+  font-size: 16px;
+  color: #a0a0a0;
+  margin-top: 40px;
+}
+
+.detailimage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.stay-inspired-section {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.background img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.signup-container {
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  transform: translateY(-50%);
+  background-color: #cbb47b;
+  padding: 50px 40px;
+  width: 380px;
+  box-sizing: border-box;
+}
+
+.signup-container h2 {
+  font-size: 42px;
+  font-weight: 900;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.signup-container p {
+  font-size: 15px;
+  line-height: 1.5;
+  color: #333;
+  margin-bottom: 25px;
+}
+
+.addreviewform{
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.addreviewform input {
+  flex: 1;
+  padding: 10px 15px;
+  border: 1px solid #333;
+  border-right: none;
+  border-radius: 30px 0 0 30px;
+  outline: none;
+  font-size: 14px;
+}
+
+.addreviewform button {
+  background-color: #333;
+  color: white;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 0 30px 30px 0;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.addreviewform button:hover {
+  background-color: #555;
+}
+
+.checkbox-container {
+  font-size: 14px;
+  color: #000000;
+}
+
+.reviewer-box {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background-color: #27272a;
+    padding: 15px 20px;
+    border-radius: 10px;
+    width: fit-content;
+}
+
+.reviewer-photo {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.reviewer-name {
+    color: #ffffff;
+    font-size: 18px;
+    margin: 0;
+}
+
+.reviewer-details {
+    color: #b4b4b4;
+    font-size: 14px;
+    margin: 3px 0 0;
+}
+
+.hero {
+  background: #f3efe9;
+  padding: 80px 20px;
+  color: #2f3a41;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+.hero-123 {
+  text-align: center;
+  margin-top: 40px;
+  padding-top: 24px;
+}
+
+.hero-456 {
+  display: inline-block;
+  background: #d99b84;
+  color: #fff;
+  padding: 12px 26px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  box-shadow: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.hero-featured {
+  background: #f3efe9;
+  padding: 40px 0 24px;
+  color: #222;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+.hero-heading {
+  font-family: "Oswald", "Impact", Arial, sans-serif;
+  font-weight: 800;
+  font-size: 72px;
+  line-height: 0.95;
+  letter-spacing: 0.5px;
+  margin: 0;
+  color: #2b2b2b;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+  margin-top: 8px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(32,36,40,0.06);
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.card img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.tag {
+  display: inline-block;
+  font-size: 11px;
+  color: #6d6d6d;
+  background: #f2f2f2;
+  padding: 6px 8px;
+  border-radius: 6px;
+  margin-top: 6px;
+}
+
+.card h3 {
+  margin: 8px 0 6px;
+  font-size: 16px;
+  color: #1f2933;
+}
+
+.card p {
+  margin: 0 0 8px;
+  color: #666;
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+.card img {
+  display: block;
+  width: 420px; 
+  height: 260px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.card.tall img {
+  width: 360px;
+  height: 500px; 
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+footer {
+  background: #2b2b2b;
+  text-align: center;
+  padding: 1.5rem 0;
+  color: #ccc;
+  margin-top: 3rem;
+}
+
+.scroll-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background: #ffb6a0;
+  color: #1f1f1f;
+  border-radius: 50%;
+  padding: 10px;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+
+.scroll-top:hover {
+  background: #c9cde8;
+}
+
+.hero-title{
+  font-family: "Oswald", "Impact", Arial, sans-serif;
+  font-weight: 900px;
+  font-size: 48px;
+  line-height: 0.95;
+  letter-spacing: 0.5px;
+}
+.read-link {
+  color: #1f2933;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 13px;
+  margin-top: auto;
+}
